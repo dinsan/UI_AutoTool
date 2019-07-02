@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import * as Chart from 'chart.js'
+import { ChartsService } from '../share/charts.service';
 
 @Component({
   selector: 'app-charts',
@@ -14,11 +15,15 @@ export class ChartsComponent implements OnInit {
 
   public chartData: any;
 
-  public constructor() { 
+  public constructor(private chartsService : ChartsService) { 
     this.chartData = {};
+    
   }
 
   public ngOnInit() { 
+    //console.log(this.chartsService.getByCountryList())
+    this.chartsService.getByCountryList();
+
     this.chartData = {
       labels: ["es",
       "en",
