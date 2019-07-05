@@ -1,1 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
+.dropList{
+    min-width: 80%;
+    background-color: #346791;
+}
+.navbackcolor{
+    background-color: #346791;
+}
+.dropdownContiner{
+
+    margin-top: 20%;
+}

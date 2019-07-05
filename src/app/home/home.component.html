@@ -1,3 +1,24 @@
-<p>
-  home works!
-</p>
+ <div class="container">
+  <div class="row dropdownContiner">
+    <div class="col-sm-4"><span class="label label-primary">Selct the Category from the below list</span></div>
+    <div class="col-sm-4"><span class="label label-primary">Select the sub category from the below list</span></div>
+    <div class="col-sm-4"><span class="label label-primary">Select the Question</span></div>
+  </div>
+    <div class="row">
+    <div class="col-sm-4">
+       <select (change)="selectChangeHandler($event)" class="btn btn-secondary dropdown-toggle dropList" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">  
+        <option *ngFor="let prod of ProductHeader">{{prod.name}} </option>  
+</select>
+    </div>
+    <div class="col-sm-4">
+     <select (change)="selectChangeHandlerSub1($event)" class="btn btn-secondary dropdown-toggle dropList" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">  
+        <option *ngFor="let prod of ItemsForSubQuestion">{{prod.name}} </option>  
+</select>
+    </div>
+    <div class="col-sm-4" >
+      <select (change)="selectChangeHandlerSub2($event)" class="btn btn-secondary dropdown-toggle dropList" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">  
+        <option *ngFor="let prod of ItemsForSubQuestion2">{{prod.name}} </option>  
+</select>
+    </div>
+  </div>
+    </div>

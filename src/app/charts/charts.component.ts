@@ -94,7 +94,7 @@ export class ChartsComponent implements OnInit {
     let chart = this.refChart.nativeElement;
     let ctx = chart.getContext("2d");
     let myChart = new Chart(ctx, {
-        type: 'pie',
+        type: 'polarArea',
         data: this.chartData,
         options: {
           tooltips: {
