@@ -1,16 +1,15 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { async, ComponentFixture, TestBed } from "@angular/core/testing";
 
-import { ChartsByCountriesComponent } from './charts-by-countries.component';
+import { ChartsByCountriesComponent } from "./charts-by-countries.component";
 
-describe('ChartsByCountriesComponent', () => {
+describe("ChartsByCountriesComponent", () => {
   let component: ChartsByCountriesComponent;
   let fixture: ComponentFixture<ChartsByCountriesComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ChartsByCountriesComponent ]
-    })
-    .compileComponents();
+      declarations: [ChartsByCountriesComponent],
+    }).compileComponents();
   }));
 
   beforeEach(() => {
@@ -19,7 +18,7 @@ describe('ChartsByCountriesComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it("should create", () => {
     expect(component).toBeTruthy();
   });
 });

@@ -1,16 +1,15 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { async, ComponentFixture, TestBed } from "@angular/core/testing";
 
-import { MonthLocalsComponent } from './month-locals.component';
+import { MonthLocalsComponent } from "./month-locals.component";
 
-describe('MonthLocalsComponent', () => {
+describe("MonthLocalsComponent", () => {
   let component: MonthLocalsComponent;
   let fixture: ComponentFixture<MonthLocalsComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ MonthLocalsComponent ]
-    })
-    .compileComponents();
+      declarations: [MonthLocalsComponent],
+    }).compileComponents();
   }));
 
   beforeEach(() => {
@@ -19,7 +18,7 @@ describe('MonthLocalsComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it("should create", () => {
     expect(component).toBeTruthy();
   });
 });
